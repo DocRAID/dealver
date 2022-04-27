@@ -1,0 +1,8 @@
+{
+  "name": "Dealver",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "0688bc0f"
+}
