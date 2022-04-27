@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Dealver",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
