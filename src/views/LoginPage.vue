@@ -23,7 +23,6 @@
           딜버에서 서로 도우며 생활해요
         </ion-card-content>
         <hr/>
-        <!-- Todo! 버튼에 아이콘 넣기 -->
         <ion-button fill="outline">
           <img src="@/../public/assets/icon/google.png">
           구글로 로그인 하기
@@ -41,7 +40,7 @@
 #style-head{
   width: 100%;
   height: 60px;
-  background-color: #78EFAD;
+  background-color: #60BD89;
 }
 #container-card {
   border-radius: 15px;
