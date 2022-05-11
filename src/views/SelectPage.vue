@@ -1,10 +1,5 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Select Page</ion-title>
-      </ion-toolbar>
-    </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
@@ -12,7 +7,9 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="Tab 2 page" />
+      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
+      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
+      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
     </ion-content>
   </ion-page>
 </template>
@@ -20,10 +17,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import SelectCard from '@/components/SelectCard.vue';
 
 export default defineComponent({
   name: 'SelectPage',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, SelectCard }
 });
 </script>
