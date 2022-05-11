@@ -25,6 +25,7 @@
         <hr/>
         <!-- Todo! 버튼에 아이콘 넣기 -->
         <ion-button color="danger">
+        
           <img src="@/../public/assets/icon/google.png">
           구글로 로그인 하기
         </ion-button>
@@ -41,7 +42,7 @@
 #style-head{
   width: 100%;
   height: 60px;
-  background-color: #78EFAD;
+  background-color: #60BD89;
 }
 #container-card {
   border-radius: 15px;
@@ -74,7 +75,6 @@ img {
 import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 
-// import ExploreContainer from '@/components/ExploreContainer.vue';
 
 export default  defineComponent({
   name: 'LoginPage',
