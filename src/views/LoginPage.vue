@@ -13,14 +13,17 @@
       </ion-header>
       
       <ion-card id="container-card">
+        <div id="style-head"/>
+        <br>
         <ion-card-header>
           <ion-card-title>딜버에 오신것을 환영합니다!</ion-card-title>
         </ion-card-header>
-
+        
         <ion-card-content>
           딜버에서 서로 도우며 생활해요
         </ion-card-content>
         <hr/>
+        <!-- Todo! 버튼에 아이콘 넣기 -->
         <ion-button>
           구글로 로그인 하기
         </ion-button>
@@ -33,6 +36,11 @@
   </ion-page>
 </template>
 <style scoped>
+#style-head{
+  width: 100%;
+  height: 60px;
+  background-color: #7af78f;
+}
 #container-card {
   border-radius: 15px;
   text-align: center;
@@ -41,6 +49,7 @@
   right: 10px;
   top: 40%;
   transform: translateY(-50%);
+  padding-bottom: 20px;
 }
 #container-card a {
   text-decoration: none;
