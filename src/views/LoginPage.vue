@@ -24,12 +24,12 @@
         </ion-card-content>
         <hr/>
         <!-- Todo! 버튼에 아이콘 넣기 -->
-        <ion-button fill="outline">
+        <ion-button color="danger">
           <img src="@/../public/assets/icon/google.png">
           구글로 로그인 하기
         </ion-button>
         <br>
-        <ion-button fill="outline" id="kakaoBtn">
+        <ion-button color="warning" class="kakaoBtn">
           <img src="@/../public/assets/icon/kakao.png">
           카카오로 로그인 하기
         </ion-button>
@@ -57,12 +57,11 @@
   text-decoration: none;
 }
 ion-button {
-  width: 200px;
+  width: 240px;
   font-weight: 600;
   font-size: 14px;
 }
-#kakaoBtn {
-  background-color: #F9E000;
+.kakaoBtn {
   color: #3C1D1D; 
 }
 img {
