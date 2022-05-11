@@ -24,11 +24,13 @@
         </ion-card-content>
         <hr/>
         <!-- Todo! 버튼에 아이콘 넣기 -->
-        <ion-button>
+        <ion-button fill="outline">
+          <img src="@/../public/assets/icon/google.png">
           구글로 로그인 하기
         </ion-button>
         <br>
-        <ion-button>
+        <ion-button fill="outline" id="kakaoBtn">
+          <img src="@/../public/assets/icon/kakao.png">
           카카오로 로그인 하기
         </ion-button>
       </ion-card>
@@ -39,7 +41,7 @@
 #style-head{
   width: 100%;
   height: 60px;
-  background-color: #7af78f;
+  background-color: #78EFAD;
 }
 #container-card {
   border-radius: 15px;
@@ -53,6 +55,20 @@
 }
 #container-card a {
   text-decoration: none;
+}
+ion-button {
+  width: 200px;
+  font-weight: 600;
+  font-size: 14px;
+}
+#kakaoBtn {
+  background-color: #F9E000;
+  color: #3C1D1D; 
+}
+img {
+  width: 20px;
+  margin-left: -5px;
+  margin-right: 10px;
 }
 </style>
 <script lang="ts">
