@@ -1,5 +1,5 @@
 <template>
-  <ion-card>
+  <ion-card class="card">
     <ion-card-header>
       <ion-card-title>{{name}}</ion-card-title>
     </ion-card-header>
@@ -30,13 +30,12 @@ export default defineComponent({
 </script>
 
 <style scoped>
-#container {
+.card {
+  border-radius: 15px;
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
+  position:relative;
   transform: translateY(-50%);
+  padding-bottom: 20px;
 }
 #container a {
   text-decoration: none;

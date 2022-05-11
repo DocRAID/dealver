@@ -1,10 +1,5 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Select Page</ion-title>
-      </ion-toolbar>
-    </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
@@ -12,6 +7,8 @@
         </ion-toolbar>
       </ion-header>
       
+      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
+      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
       <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
     </ion-content>
   </ion-page>
