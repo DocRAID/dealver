@@ -16,7 +16,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style lang="css">
 #container {
   text-align: center;
   position: absolute;

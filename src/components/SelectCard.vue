@@ -29,7 +29,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style lang="css">
 .card {
   border-radius: 15px;
   text-align: center;

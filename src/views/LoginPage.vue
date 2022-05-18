@@ -33,7 +33,7 @@
     </ion-content>
   </ion-page>
 </template>
-<style scoped>
+<style lang="css">
 #style-head{
   width: 100%;
   height: 60px;
