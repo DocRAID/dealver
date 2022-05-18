@@ -6,10 +6,14 @@
           <ion-title size="large">Tab 2</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
-      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
-      <SelectCard name="limdongju" cost="한시간" moreInfo="해줘요" point="10" />
+      <div class="space"/>
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
+      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
     </ion-content>
   </ion-page>
 </template>
@@ -21,6 +25,17 @@ import SelectCard from '@/components/SelectCard.vue';
 
 export default defineComponent({
   name: 'SelectPage',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, SelectCard }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, SelectCard },
+  props: {
+    Name: String,
+    Cost: String,
+    MoreInfo: String,
+    Point:Number
+  }
 });
 </script>
+<style scoped>
+  .space{
+    height: 80px;
+  }
+</style>

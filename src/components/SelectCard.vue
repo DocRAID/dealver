@@ -1,13 +1,13 @@
 <template>
   <ion-card class="card">
     <ion-card-header>
-      <ion-card-title>{{name}}</ion-card-title>
+      <ion-card-title>{{Name}}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-      {{cost}}
-      {{moreInfo}}
-      {{point}}
+      {{Cost}}
+      {{MoreInfo}}
+      {{Point}}
       <ion-button>
         해줄게요
       </ion-button>
@@ -21,10 +21,10 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'SelectCard',
   props: {
-    name: String,
-    cost: String,
-    moreInfo: String,
-    point:Number
+    Name: String,
+    Cost: String,
+    MoreInfo: String,
+    Point:Number
   }
 });
 </script>
