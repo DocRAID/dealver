@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
+import { IonButton,IonCard } from '@ionic/vue';
 export default defineComponent({
   name: 'SelectCard',
   props: {
@@ -25,7 +25,8 @@ export default defineComponent({
     Cost: String,
     MoreInfo: String,
     Point:Number
-  }
+  },
+  components: { IonButton,IonCard }
 });
 </script>
 

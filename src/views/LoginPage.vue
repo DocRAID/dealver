@@ -1,11 +1,6 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Login</ion-title>
-        </ion-toolbar>
-      </ion-header>
       
       <ion-card id="container-card">
         <div id="style-head"/>
@@ -19,13 +14,12 @@
         </ion-card-content>
         <hr/>
         <!-- Todo! 버튼에 아이콘 넣기 -->
-        <ion-button color="danger">
-        
+        <ion-button color="danger" href="/upload">
           <img src="@/../public/assets/icon/google.png">
           구글로 로그인 하기
         </ion-button>
         <br>
-        <ion-button color="warning" class="kakaoBtn">
+        <ion-button color="warning" href="/upload" class="kakaoBtn">
           <img src="@/../public/assets/icon/kakao.png">
           카카오로 로그인 하기
         </ion-button>
@@ -35,12 +29,12 @@
 </template>
 <script lang="ts">
   import { defineComponent } from 'vue';
-  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+  import { IonPage,  IonContent,IonCard,IonCardContent,IonCardHeader,IonCardTitle } from '@ionic/vue';
 
 
   export default  defineComponent({
     name: 'LoginPage',
-    components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+    components: {  IonContent, IonPage,IonCard,IonCardContent,IonCardHeader,IonCardTitle }
   });
 </script>
 <style lang="css">

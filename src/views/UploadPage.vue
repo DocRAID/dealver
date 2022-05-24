@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    
+    <h1>hello</h1>
   </ion-page>
 </template>
 
@@ -9,7 +9,7 @@ import { defineComponent } from 'vue';
 import { IonPage } from '@ionic/vue';
 
 export default defineComponent({
-  name: 'Tab3Page',
+  name: 'UploadPage',
   components: { IonPage }
 });
 </script>

@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'upload',
-        component: () => import('@/views/Upload.vue')
+        component: () => import('@/views/UploadPage.vue')
       }
     ]
   }
