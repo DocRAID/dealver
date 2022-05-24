@@ -13,9 +13,9 @@
           <ion-icon :icon="duplicate" />
           <ion-label>Upload</ion-label>
         </ion-tab-button>
-        <ion-tab-button tab="tab3" href="/login">
-          <ion-icon :icon="logIn" />
-          <ion-label>Login</ion-label>
+        <ion-tab-button tab="tab3" href="/acount">
+          <ion-icon :icon="person" />
+          <ion-label>Acount</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
@@ -25,7 +25,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { apps, duplicate, logIn } from 'ionicons/icons';
+import { apps, duplicate, person  } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'TabsPage',
@@ -34,7 +34,7 @@ export default defineComponent({
     return {
       apps, 
       duplicate, 
-      logIn,
+      person,
     }
   }
 });
