@@ -33,6 +33,16 @@
     </ion-content>
   </ion-page>
 </template>
+<script lang="ts">
+  import { defineComponent } from 'vue';
+  import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+
+
+  export default  defineComponent({
+    name: 'LoginPage',
+    components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  });
+</script>
 <style lang="css">
 #style-head{
   width: 100%;
@@ -49,10 +59,7 @@
   transform: translateY(-50%);
   padding-bottom: 20px;
 }
-#container-card a {
-  text-decoration: none;
-}
-ion-button {
+ion-card ion-button {
   width: 240px;
   font-weight: 600;
   font-size: 14px;
@@ -60,19 +67,9 @@ ion-button {
 .kakaoBtn {
   color: #3C1D1D; 
 }
-img {
+ion-button img {
   width: 20px;
   margin-left: -5px;
   margin-right: 10px;
 }
 </style>
-<script lang="ts">
-import { defineComponent } from 'vue';
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-
-
-export default  defineComponent({
-  name: 'LoginPage',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-});
-</script>

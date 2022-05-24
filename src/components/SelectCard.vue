@@ -1,5 +1,5 @@
 <template>
-  <ion-card class="card">
+  <ion-card id="card">
     <ion-card-header>
       <ion-card-title>{{Name}}</ion-card-title>
     </ion-card-header>
@@ -8,7 +8,7 @@
       {{Cost}}
       {{MoreInfo}}
       {{Point}}
-      <ion-button>
+      <ion-button class="selection-button">
         해줄게요
       </ion-button>
     </ion-card-content>
@@ -30,14 +30,14 @@ export default defineComponent({
 </script>
 
 <style lang="css">
-.card {
+#card {
   border-radius: 15px;
   text-align: center;
   position:relative;
   transform: translateY(-50%);
   padding-bottom: 20px;
 }
-#container a {
-  text-decoration: none;
+ion-card-content .selection-button {
+  width: 110px;
 }
 </style>

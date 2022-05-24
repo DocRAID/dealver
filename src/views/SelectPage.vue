@@ -8,12 +8,6 @@
       </ion-header>
       <div class="space"/>
       <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
-      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
-      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
-      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
-      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
-      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
-      <SelectCard Name="limdongju" Cost="한시간" MoreInfo="해줘요" v-bind:Point="42" />
     </ion-content>
   </ion-page>
 </template>
