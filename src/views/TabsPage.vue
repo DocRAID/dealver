@@ -3,7 +3,6 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar>
-          
         <ion-tab-button tab="tab1" href="/selection">
           <ion-icon :icon="apps" />
           <ion-label>Selection</ion-label>
@@ -13,10 +12,12 @@
           <ion-icon :icon="duplicate" />
           <ion-label>Upload</ion-label>
         </ion-tab-button>
+
         <ion-tab-button tab="tab3" href="/acount">
           <ion-icon :icon="person" />
           <ion-label>Acount</ion-label>
         </ion-tab-button>
+
       </ion-tab-bar>
     </ion-tabs>
   </ion-page>

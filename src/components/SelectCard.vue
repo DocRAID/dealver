@@ -5,9 +5,9 @@
     </ion-card-header>
 
     <ion-card-content>
-      {{Cost}}
-      {{MoreInfo}}
-      {{Point}}
+      드는 비용 : {{Cost}} <br>
+      부탁 내용 : {{MoreInfo}} <br>
+      Point : {{Point}} <br>
       <ion-button class="selection-button">
         해줄게요
       </ion-button>
