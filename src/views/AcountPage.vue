@@ -2,6 +2,7 @@
   <ion-page>
     <ion-content :fullscreen="true">
       <h1>test</h1>
+      <!-- 여기서 해야함  -->
     </ion-content>
   </ion-page>
 </template>
