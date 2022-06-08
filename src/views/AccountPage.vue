@@ -1,47 +1,51 @@
 <template>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
-    </ion-card-header>
+  <ion-page>
+    <ion-content :fullscreen="true">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
 
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-  </ion-card>
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+        </ion-card-content>
+      </ion-card>
 
-  <ion-card>
-    <ion-item href="#" class="ion-activated">
-      <ion-icon :icon="wifi"></ion-icon>
-      <ion-label>Card Link Item 1 activated</ion-label>
-    </ion-item>
+      <ion-card>
+        <ion-item href="#" class="ion-activated">
+          <ion-icon :icon="wifi"></ion-icon>
+          <ion-label>Card Link Item 1 activated</ion-label>
+        </ion-item>
 
-    <ion-item href="#">
-      <ion-icon :icon="wine"></ion-icon>
-      <ion-label>Card Link Item 2</ion-label>
-    </ion-item>
+        <ion-item href="#">
+          <ion-icon :icon="wine"></ion-icon>
+          <ion-label>Card Link Item 2</ion-label>
+        </ion-item>
 
-    <ion-item class="ion-activated">
-      <ion-icon :icon="warning"></ion-icon>
-      <ion-label>Card Button Item 1 activated</ion-label>
-    </ion-item>
+        <ion-item class="ion-activated">
+          <ion-icon :icon="warning"></ion-icon>
+          <ion-label>Card Button Item 1 activated</ion-label>
+        </ion-item>
 
-    <ion-item>
-      <ion-icon :icon="walk"></ion-icon>
-      <ion-label>Card Button Item 2</ion-label>
-    </ion-item>
-  </ion-card>
+        <ion-item>
+          <ion-icon :icon="walk"></ion-icon>
+          <ion-label>Card Button Item 2</ion-label>
+        </ion-item>
+      </ion-card>
+    </ion-content>
+  </ion-page>
 </template>
 
 <script>
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel } from '@ionic/vue';
+import { IonContent,IonPage,IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel } from '@ionic/vue';
 import { pin, walk, warning, wifi, wine } from 'ionicons/icons';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'AccountPage',
-  components: { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel },
+  components: { IonContent,IonPage, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel },
   setup() {
     return {  pin, walk, warning, wifi, wine };
   }
