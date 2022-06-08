@@ -1,8 +1,7 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <br>
-      <ion-card class="card-margin">
+      <ion-card class="card">
         <ion-input value="01" readonly class="q-number"></ion-input>
           <ion-item>
             <ion-label position="floating">무엇을 도와드릴까요?</ion-label>
@@ -10,7 +9,7 @@
           </ion-item>
 
       </ion-card>
-      <ion-card class="card-margin">
+      <ion-card class="card">
           <!-- Readonly input -->
           <ion-input value="02" readonly class="q-number"></ion-input>
           
@@ -20,7 +19,7 @@
           </ion-item>
       </ion-card>
 
-      <ion-card class="card-margin">
+      <ion-card class="card">
           <!-- Readonly input -->
           <ion-input value="03-1" readonly class="q-number"></ion-input>
           
@@ -30,7 +29,7 @@
           </ion-item>
       </ion-card>
 
-      <ion-card class="card-margin">
+      <ion-card class="card">
           <!-- Readonly input -->
           <ion-input value="03-2" readonly class="q-number"></ion-input>
           
@@ -60,7 +59,11 @@ export default defineComponent({
   font-size: 24px;
 }
 
-.card-margin {
+.card {
   padding: 10px 10px 20px 10px;
+  border-radius: 15px;
+  position:relative;
+  margin-bottom: 20px;
 }
+
 </style>
