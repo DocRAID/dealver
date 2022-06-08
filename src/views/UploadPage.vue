@@ -1,18 +1,63 @@
 <template>
-  <ion-page>
-    <h1>hello</h1>
-    <a href="https://www.figma.com/file/8THLJxjpz6FmZJNDbYoDJd/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C....?node-id=0%3A1">디디디자자자잦이이이ㅣㅇ인</a>
-    <br>
-    <a href="https://www.erdcloud.com/d/rvaFBteF559atSLp5">아아아아ㅏㅏㅏㅏㅏ이얼ㄷㄷㄷㄷ듸</a>
-  </ion-page>
+  <ion-card class="card-margin">
+    <ion-input value="01" readonly class="q-number"></ion-input>
+      <ion-item>
+        <ion-label position="floating">무엇을 도와드릴까요?</ion-label>
+        <ion-input clear-input value=""></ion-input>
+      </ion-item>
+
+  </ion-card>
+
+
+    
+  <ion-card class="card-margin">
+      <!-- Readonly input -->
+      <ion-input value="02" readonly class="q-number"></ion-input>
+      
+      <ion-item>
+        <ion-label position="floating">이유는 무엇인가요?</ion-label>
+        <ion-input clear-input value=""></ion-input>
+      </ion-item>
+  </ion-card>
+
+  <ion-card class="card-margin">
+      <!-- Readonly input -->
+      <ion-input value="03-1" readonly class="q-number"></ion-input>
+      
+      <ion-item>
+        <ion-label position="floating">해야 할 일을 자세하게 적어주세요</ion-label>
+        <ion-input clear-input value=""></ion-input>
+      </ion-item>
+  </ion-card>
+
+  <ion-card class="card-margin">
+      <!-- Readonly input -->
+      <ion-input value="03-2" readonly class="q-number"></ion-input>
+      
+      <ion-item>
+        <ion-label position="floating">심부름 값은 얼마인가요?</ion-label>
+        <ion-input clear-input value=""></ion-input>
+      </ion-item>
+  </ion-card>
+
 </template>
 
-<script lang="ts">
+<script>
+import { IonLabel, IonInput, IonItem, IonCard } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { IonPage } from '@ionic/vue';
 
 export default defineComponent({
   name: 'UploadPage',
-  components: { IonPage }
+  components: { IonLabel, IonInput, IonItem,IonCard }
 });
 </script>
+<style>
+.q-number {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card-margin {
+  padding: 10px 10px 20px 10px;
+}
+</style>

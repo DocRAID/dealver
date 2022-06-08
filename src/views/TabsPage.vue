@@ -13,7 +13,7 @@
           <ion-label>Upload</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab3" href="/acount">
+        <ion-tab-button tab="tab3" href="/account">
           <ion-icon :icon="person" />
           <ion-label>Acount</ion-label>
         </ion-tab-button>

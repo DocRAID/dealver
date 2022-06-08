@@ -37,7 +37,7 @@
     components: {  IonContent, IonPage,IonCard,IonCardContent,IonCardHeader,IonCardTitle }
   });
 </script>
-<style lang="css">
+<style scoped>
 #style-head{
   width: 100%;
   height: 60px;

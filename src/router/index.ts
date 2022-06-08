@@ -17,19 +17,23 @@ const routes: Array<RouteRecordRaw> = [
       // },
       {
         path: 'login',
+        name: 'LoginPage',
         component: () => import('@/views/LoginPage.vue')
       },
       {
         path: 'selection',
+        name: 'SelectionPage',
         component: () => import('@/views/SelectPage.vue')
       },
       {
         path: 'upload',
+        name: 'UploadPage',
         component: () => import('@/views/UploadPage.vue')
       },
       {
-        path: 'acount',
-        component: () => import('@/views/AcountPage.vue')
+        path: 'account',
+        name: 'AccountPage',
+        component: () => import('@/views/AccountPage.vue')
       }
     ]
   }
