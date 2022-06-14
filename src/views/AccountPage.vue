@@ -34,18 +34,21 @@
           <ion-label>Card Button Item 2</ion-label>
         </ion-item>
       </ion-card>
+      <ion-button>
+        test
+      </ion-button>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonContent,IonPage,IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel } from '@ionic/vue';
+import { IonContent,IonPage,IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel,IonButton} from '@ionic/vue';
 import { pin, walk, warning, wifi, wine } from 'ionicons/icons';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'AccountPage',
-  components: { IonContent,IonPage, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel },
+  components: { IonContent,IonPage, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel,IonButton },
   setup() {
     return {  pin, walk, warning, wifi, wine };
   }
