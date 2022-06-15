@@ -1,56 +1,60 @@
 <template>
   <ion-page>
     <ion-content :fullscreen="true">
-      <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          <ion-card-title>Card Title</ion-card-title>
-        </ion-card-header>
-
-        <ion-card-content>
-          Keep close to Nature's heart... and break clear away, once in awhile,
-          and climb a mountain or spend a week in the woods. Wash your spirit clean.
-        </ion-card-content>
+      <div class="space"/>
+      <div class="profile-to-mid">
+        <img src="@/../public/assets/profile.png" alt="" class="profile" >
+      </div>
+      <ion-card class="profile-card">
+        <ion-card-title>{ NickName }</ion-card-title>
+        <h3>전화번호</h3>
+        <h3>010 - 8061 - 5542</h3>
       </ion-card>
-
       <ion-card>
-        <ion-item href="#" class="ion-activated">
-          <ion-icon :icon="wifi"></ion-icon>
-          <ion-label>Card Link Item 1 activated</ion-label>
-        </ion-item>
-
-        <ion-item href="#">
-          <ion-icon :icon="wine"></ion-icon>
-          <ion-label>Card Link Item 2</ion-label>
-        </ion-item>
-
-        <ion-item class="ion-activated">
-          <ion-icon :icon="warning"></ion-icon>
-          <ion-label>Card Button Item 1 activated</ion-label>
-        </ion-item>
-
         <ion-item>
-          <ion-icon :icon="walk"></ion-icon>
-          <ion-label>Card Button Item 2</ion-label>
-        </ion-item>
+          <ion-label position="floating">이름 변경</ion-label>
+            <ion-input clear-input value=""></ion-input>
+          </ion-item>
+          <ion-button>Submit</ion-button>
       </ion-card>
-      <ion-button>
-        test
-      </ion-button>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonContent,IonPage,IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel,IonButton} from '@ionic/vue';
-import { pin, walk, warning, wifi, wine } from 'ionicons/icons';
+import { IonContent,IonPage,IonCardTitle,IonCard,IonLabel,IonItem,IonButton} from '@ionic/vue';
+// import { pin, walk, warning, wifi, wine } from 'ionicons/icons';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'AccountPage',
-  components: { IonContent,IonPage, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonItem, IonLabel,IonButton },
+  components: { IonContent,IonPage,IonCardTitle,IonCard,IonLabel,IonItem,IonButton },
   setup() {
-    return {  pin, walk, warning, wifi, wine };
+    return {   };
   }
 });
 </script>
+<style>
+.space {
+  height: 60px;
+}
+
+.profile-card {
+  text-align: center;
+  padding: 70px 0px 10px 0px;
+  /* color: yellow; */
+}
+
+.profile {
+  border-radius: 25%;
+  width: 100px;
+  position:absolute;
+  top: 10px;
+  z-index: 1;
+  margin: 0px auto;
+}
+.profile-to-mid{
+  display: flex;
+  justify-content: center;
+}
+</style>

@@ -8,7 +8,7 @@
     css-class="my-custom-class"
     :buttons="buttons"
     @didDismiss="setOpen(false)"
-    />  
+    />
   </ion-app>
 </template>
 
